@@ -1,0 +1,96 @@
+.footer {
+    width: 100%;
+    background-color: #333333;
+  }
+  .footer .top_f {
+    border-bottom: 1px solid #505050;
+    padding: 18px 0px 38px;
+  }
+  .footer .top_f .w {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  /* 友情链接 */
+  .footer .top_f .w .yq_link {
+    color: #b3b3b3;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .footer .top_f .w .yq_link ul {
+    padding-right: 80px;
+  }
+  .footer .top_f .w .yq_link ul li {
+    padding-left: 25px;
+    float: left;
+  }
+  .footer .bot_f {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 25px;
+  }
+  /* 客服 */
+  .footer .bot_f .ll {
+    float: left;
+  }
+  .footer .bot_f .ll p {
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .footer .bot_f .ll button {
+    padding: 3px 20px;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .footer .bot_f .ll button:first-child {
+    margin-top: 26px;
+  }
+  /* // 公司介绍 */
+  .footer .bot_f .lc {
+    float: left;
+    padding-left: 117px;
+  }
+  .footer .bot_f .lc ul li {
+    float: left;
+    position: relative;
+  }
+  .footer .bot_f .lc ul li.line::before {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 17px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: #898989;
+  }
+  .footer .bot_f .lc ul li:nth-child(odd) {
+    padding: 0px 15px;
+    color: #898989;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .footer .bot_f .lc ul li:first-child {
+    padding-left: 0;
+  }
+  /* 二维码区域 */
+  .footer .bot_f .lr {
+    float: right;
+  }
+  .footer .bot_f .lr p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 10px;
+    color: #989898;
+  }
+  .marginTop40 {
+    margin-top: 25px;
+  }
+  .marginTop40 p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #b3b3b3;
+  }
+  
+  

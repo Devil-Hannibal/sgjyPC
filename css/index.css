@@ -1,0 +1,104 @@
+.container >.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* 新闻动态 */
+.newsDt {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.jyxw {
+    width: 49%;
+    border: 1px solid #d9d9d9;
+  }
+  .jyxw:nth-child(n+3) {
+    margin-top: 20px;
+  }
+  .jyxw .title {
+    border-bottom: 1px solid #ff6433;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 17px;
+    font-size: 14px;
+  }
+  .jyxw .title .new_icon {
+    line-height: 50px;
+    color: white;
+    background-color: #ff5722;
+    font-size: 22px;
+    padding: 0px 17px;
+    position: relative;
+  }
+  .jyxw .title .new_icon .iconfont {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .jyxw .title .new_icon .sg_skew {
+    display: inline-block;
+    width: 20px;
+    height: 51px;
+    transform: skew(14deg);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background-color: #ff5722;
+  }
+  .jyxw .title .new_icon .bg_line::before {
+    display: block;
+    content: '';
+    width: 2px;
+    height: 50px;
+    background-color: #ff5722;
+    transform: skew(14deg);
+    position: absolute;
+    right: -15px;
+    top: 0;
+  }
+  .jyxw .title .more {
+    font-size: 14px;
+    color: #ff5722;
+    line-height: 50px;
+  }
+  .jyxw .content {
+    padding: 27px;
+  }
+  .jyxw .content .news_box {
+      display: flex;
+      justify-content: space-between;
+  }
+  .jyxw .content .news_box > div{
+      width: 48%;
+  }
+  .jyxw .content .news_box > div img {
+    width: 100%;
+    height: 100%;
+  }
+  .jyxw .content .textList {
+    padding-top: 30px;
+    font-size: 15px;
+    color: #666666;
+  }
+  .jyxw .content .textList li {
+    border-bottom: 1px dashed #e4e0e0;
+    height: 40px;
+    line-height: 40px;
+  }
+  .jyxw .content .textList li span:last-child {
+    padding-left: 20px;
+  }
+  .jyxw .content .textList li:last-child {
+    border-bottom: none;
+  }
+  .jyxw .content .textList li a{
+      color: #666666;
+        overflow: hidden;/*内容超出后隐藏*/
+        text-overflow: ellipsis;/* 超出内容显示为省略号*/
+        white-space: nowrap;/*文本不进行换行*/
+      
+  }
+  

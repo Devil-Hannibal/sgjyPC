@@ -1,12 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>信息教育平台首页</title>
+    <link rel="stylesheet" href="./plugin/css/rest.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <!-- 登录注册区 -->
+            <div class="title">
+                <div class="fl_title">欢迎来到*-*******网！</div>
+
+                <div class="fr_title font16">
+                    <span class="iconfont icon-denglu-copy"></span>
+                    <span class="font15" @click="getLogin(true)">登录</span>
+                    <span @click="getSurrce(true)">注册</span>
+                </div>
+
+            </div>
+            <!-- 所搜区域 -->
+            <div style="background-color: white">
+                <div class="logoBox">
+                    <!-- logo区域 -->
+                    <div>
+                        <div class="logo_l">
+                            <img src=".//images/logo.png" alt>
+                        </div>
+                    </div>
+                    <!-- 搜索框 -->
+                    <div class="paddingLeft80">
+                        <div class="search">
+                            <input class="search_input" type="text">
+                            <button class="btn-search iconfont iconfont-search"></button>
+                        </div>
+
+                        <ul class="ul1">
+                            <li>
+                                <a href="javasrcipt:void(0)" class="active">热门搜索 :</a>
+                            </li>
+                            <li>
+                                <a href="javasrcipt:void(0)">考研政治</a>
+                            </li>
+                            <li>
+                                <a href="javasrcipt:void(0)">考研英语</a>
+                            </li>
+                            <li>
+                                <a href="javasrcipt:void(0)">考研数学</a>
+                            </li>
+                            <li>
+                                <a href="javasrcipt:void(0)">考研集训营</a>
+                            </li>
+                            <li>
+                                <a href="javasrcipt:void(0)">考研面试课</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 热线电话 -->
+                    <div class="hot_phone">
+                        <div class="logo_r">
+                            <div class="tel">
+                                <img src="./images/phone.png" alt>
+                            </div>
+                            <div class="tel_r">
+                                <p>全国服务热线</p>
+                                <p class="phone_txt">15545452365</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 菜单区域 -->
+            <div class="meusBox">
+                <div class="box">
+                    <div class="meus">
+                        <span class="iconfont icon-caidan1"></span>
+                        <span class="paddingLt15">行业分类</span>
+                    </div>
+
+                    <ul class="meus_ul">
+                        <li>
+                            <a href="javascrip:void(0)">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="javascrip:void(0)">培训课程</a>
+                        </li>
+                        <li>
+                            <a href="javascrip:void(0)">培训学校</a>
+                        </li>
+                        <li>
+                            <a href="javascrip:void(0)">讯息资讯</a>
+
+                        </li>
+                        <li>
+                            <a href="javascrip:void(0)">教考知识</router-link>
+                        </li>
+                        <li>
+                            <a href="javascrip:void(0)">明星推荐</a>
+                        </li>
+                        <li>
+                            <a href="javascrip:void(0)">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+
+            <!-- 新闻动态 -->
+            <div class="newsDt">
+                <div class="jyxw">
+                    <div class="title">
+                        <div class="new_icon">
+                            <span class="iconfont icon-diqiu"></span>
+                            <span>教育新闻</span>
+                            <span class="sg_skew"></span>
+                            <span class="bg_line"></span>
+                        </div>
+                        <div>
+                            <span class="bg_line"></span>
+                            <span class="bg_line"></span>
+                            <span class="bg_line"></span>
+                            <span class="more fr">MORE+</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="news_box">
+                            <div><img src="./images/jyxw1.png" alt=""></div>
+                            <div><img src="./images/jyxw2.png" alt=""></div>
+
+                        </div>
+                        <ul class="textList">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:void(0)">
+                                            <span class="iconfont icon-laba_"></span>
+                                            <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                        </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:void(0)">
+                                            <span class="iconfont icon-laba_"></span>
+                                            <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                        </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:void(0)">
+                                            <span class="iconfont icon-laba_"></span>
+                                            <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                        </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                        <span class="iconfont icon-laba_"></span>
+                                        <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 热门课程 -->
+                <div class="jyxw">
+                        <div class="title">
+                            <div class="new_icon fl">
+                                <span class="iconfont icon-shu"></span>
+                                <span>热门课程</span>
+                                <span class="sg_skew"></span>
+                                <span class="bg_line"></span>
+                            </div>
+                            <div>
+                                    <span class="bg_line"></span>
+                                    <span class="bg_line"></span>
+                                    <span class="bg_line"></span>
+                                    <span class="more ">MORE+</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="clearfix news_box">
+                                <div class="fl"><img src="./images/jyxw1.png" alt=""></div>
+                                <div class="fr"><img src="./images/jyxw2.png" alt=""></div>
     
+                            </div>
+                            <ul class="textList">
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- 人气学校 -->
+                <div class="jyxw">
+                        <div class="title ">
+                            <div class="new_icon fl">
+                                <span class="iconfont icon-xuexiao"></span>
+                                <span>人气学校</span>
+                                <span class="sg_skew"></span>
+                                <span class="bg_line"></span>
+                            </div>
+                            <div>
+                                    <span class="bg_line"></span>
+                                    <span class="bg_line"></span>
+                                    <span class="bg_line"></span>
+                                    <span class="more">MORE+</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="clearfix news_box">
+                                <div class="fl"><img src="./images/jyxw1.png" alt=""></div>
+                                <div class="fr"><img src="./images/jyxw2.png" alt=""></div>
+    
+                            </div>
+                            <ul class="textList">
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- 特惠信息 -->
+                <div class="jyxw">
+                        <div class="title">
+                            <div class="new_icon fl">
+                                <span class="iconfont icon-jilu"></span>
+                                <span>特惠信息</span>
+                                <span class="sg_skew"></span>
+                                <span class="bg_line"></span>
+                            </div>
+                            <div>
+                                    <span class="bg_line"></span>
+                                    <span class="bg_line"></span>
+                                    <span class="bg_line"></span>
+                                    <span class="more">MORE+</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="news_box">
+                                <div><img src="./images/jyxw1.png" alt=""></div>
+                                <div><img src="./images/jyxw2.png" alt=""></div>
+    
+                            </div>
+                            <ul class="textList">
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                                <li>
+                                    <span class="iconfont icon-laba_"></span>
+                                    <span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- 尾部 -->
+        <div class="footer">
+            <div class="top_f">
+                <div class="w">
+                    <div class="yq_link">
+                        <h4>友情链接</h4>
+                        <ul class="clearfix">
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                            <li>煨汤下载</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 备注 -->
+            <div class="bot_f clearfix">
+                <!-- 客服 -->
+                <div class="ll">
+                    <p>龙采学校：0451-895**89 </p>
+                    <p>龙采加盟：1864634**895</p>
+                    <button><span class="iconfont icon-jiantou">在线客服</span></button><br>
+                    <button><span class="iconfont icon-jiantou">在线客服</span></button>
+                </div>
+                <!-- 公司介绍 -->
+                <div class="lc">
+                    <ul class="clearfix">
+                        <li>首页 </li>
+                        <li class="line"></li>
+                        <li>关于我们</li>
+                        <li class="line"></li>
+                        <li>联系我们</li>
+                        <li class="line"></li>
+                        <li>免责声明</li>
+                        <li class="line"></li>
+                        <li>法律顾问</li>
+                        <li class="line"></li>
+                        <li>友情链接</li>
+                    </ul>
+                    <div class="marginTop40">
+                        <p>版权所有：龙采smart科技发展有限公司</p>
+                        <p>友情提示：投资有风险，咨询请细致，以便成功加盟。</p>
+                        <p>技术支持：龙采科技</p>
+                        <p>备案号：895</p>
+                    </div>
+                </div>
+                <!-- 二维码区域 -->
+                <div class="lr ">
+                    <img src="./images/2wm.png" style="height: 125px;" alt="">
+                    <p class="text-center">关注微信公众号</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
