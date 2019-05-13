@@ -125,7 +125,7 @@
 <div class="CourseDetails">
     <div class="headerDetails">
         <div class="headerContent">
-            <div class="breadcrumb qf">
+            <div class="breadcrumbs qf">
                 <p><a href="">源学网首页></a></p>
                 <p><a href="">培训课程></a></p>
                 <p><a href="">实操培训课程></a></p>
@@ -224,54 +224,40 @@
                         </li>
                     </ul>
                 </div>
-
-
-
-                <!--分页组件开始-->
-                <div class="paging" style="width:100%;text-align: center;position: absolute;bottom:-100px;">
-                    <ul id="paging" class="pagination">
-                        <!--<li class="first disabled" jp-role="first" jp-data="1"><a href="javascript:void(0);">首页</a></li>
-                        <li class="prev disabled" jp-role="prev" jp-data="0"><a href="javascript:void(0);"><i class="arrow arrow2"></i>上一页</a></li>
-                        <li class="page active" jp-role="page" jp-data="1"><a href="javascript:void(0);">1</a></li>
-                        <li class="page" jp-role="page" jp-data="2"><a href="javascript:void(0);">2</a></li>
-                        <li class="page" jp-role="page" jp-data="3"><a href="javascript:void(0);">3</a></li>
-                        <li class="page" jp-role="page" jp-data="4"><a href="javascript:void(0);">4</a></li>
-                        <li class="page" jp-role="page" jp-data="5"><a href="javascript:void(0);">5</a></li>
-                        <li class="page" jp-role="page" jp-data="6"><a href="javascript:void(0);">6</a></li>
-                        <li class="page" jp-role="page" jp-data="7"><a href="javascript:void(0);">7</a></li>
-                        <li class="page" jp-role="page" jp-data="8"><a href="javascript:void(0);">8</a></li>
-                        <li class="page" jp-role="page" jp-data="9"><a href="javascript:void(0);">9</a></li>
-                        <li class="page" jp-role="page" jp-data="10"><a href="javascript:void(0);">10</a></li>
-                        <li class="next" jp-role="next" jp-data="2"><a href="javascript:void(0);">下一页<i class="arrow arrow3"></i></a></li>
-                        <li class="last" jp-role="last" jp-data="100"><a href="javascript:void(0);">末页</a></li>-->
-                    </ul>
-                    <div style=";position: absolute;right:0px;top:27px;">1/50页</div>
-                    <style>
-                        .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-                            background-color: #fb9400;
-                            border-color: #fb9400;
-                        }
-                        .pagination>li>a, .pagination>li>span {color: #333;}
-                    </style>
-                    <script type="text/javascript">
-                        $("#paging").jqPaginator({
-                            totalPages: 50,
-                            visiblePages: 5,
-                            currentPage: 2,
-                            first: '<li class="first"><a href="javascript:void(0);">首页<\/a><\/li>',
-                            prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i>上一页<\/a><\/li>',
-                            next: '<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"><\/i><\/a><\/li>',
-                            last: '<li class="last"><a href="javascript:void(0);">末页<\/a><\/li>',
-                            page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
-                            onPageChange: function (n) {
-                                $("#demo2-text").html("当前第" + n + "页");
-                            }
-                        });
-                    </script>
-                </div>
-                <!--分页组件结束-->
-
             </div>
+
+
+            <!--分页组件开始-->
+            <div class="paging" style="width:100%;text-align: center;position: relative">
+                <ul id="paging" class="pagination">
+
+                </ul>
+                <div class="current_text" style=";position: absolute;right:0px;top:27px;">1/50页</div>
+                <style>
+                    .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+                        background-color: #fb9400;
+                        border-color: #fb9400;
+                    }
+                    .pagination>li>a, .pagination>li>span {color: #333;}
+                </style>
+                <script type="text/javascript">
+                    $("#paging").jqPaginator({
+                        totalPages: 50,     //总页数
+                        visiblePages: 5,    //显示5页索引
+                        currentPage: 1,     //当前初始页
+                        first: '<li class="first"><a href="javascript:void(0);">首页<\/a><\/li>',
+                        prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i>上一页<\/a><\/li>',
+                        next: '<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"><\/i><\/a><\/li>',
+                        last: '<li class="last"><a href="javascript:void(0);">末页<\/a><\/li>',
+                        page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+                        onPageChange: function (n) {      //当前页改变后的回调函数
+                            //console.log(("当前第" + n + "页"));
+                            $('.current_text').text(n+"/"+this.totalPages+"页");
+                        }
+                    });
+                </script>
+            </div>
+            <!--分页组件结束-->
 
         </div>
         <div class="middleDetails_right">
@@ -284,7 +270,71 @@
 
 
 
-
+<!-- 尾部 -->
+<div class="footer">
+    <div class="top_f">
+        <div class="w">
+            <div class="yq_link">
+                <h4>友情链接</h4>
+                <ul class="clearfix">
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 备注 -->
+    <div class="bot_f clearfix">
+        <!-- 客服 -->
+        <div class="ll">
+            <p>龙采学校：0451-895**89 </p>
+            <p>龙采加盟：1864634**895</p>
+            <button><span class="iconfont icon-jiantou">在线客服</span></button><br>
+            <button><span class="iconfont icon-jiantou">在线客服</span></button>
+        </div>
+        <!-- 公司介绍 -->
+        <div class="lc">
+            <ul class="clearfix">
+                <li>首页 </li>
+                <li class="line"></li>
+                <li>关于我们</li>
+                <li class="line"></li>
+                <li>联系我们</li>
+                <li class="line"></li>
+                <li>免责声明</li>
+                <li class="line"></li>
+                <li>法律顾问</li>
+                <li class="line"></li>
+                <li>友情链接</li>
+            </ul>
+            <div class="marginTop40">
+                <p>版权所有：龙采smart科技发展有限公司</p>
+                <p>友情提示：投资有风险，咨询请细致，以便成功加盟。</p>
+                <p>技术支持：龙采科技</p>
+                <p>备案号：895</p>
+            </div>
+        </div>
+        <!-- 二维码区域 -->
+        <div class="lr ">
+            <img src="../images/2wm.png" style="height: 125px;" alt="">
+            <p class="text-center">关注微信公众号</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
