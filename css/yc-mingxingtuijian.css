@@ -4,7 +4,7 @@ body {background: #fff;}
 
 
 .StarRecommendation{width:1200px;margin: 0 auto;}
-
+/*面包屑及其选择样式*/
 .headerStar{width:1200px;position: relative;}
 .headerBreadcrumb{height:50px;display:flex;justify-content:flex-start; align-items : center;}
 .headerBreadcrumb>p{margin-left:5px;}
@@ -19,17 +19,17 @@ body {background: #fff;}
 .headerStar .Breadcrumb_del>p{margin-right: 10px;margin-top:2px;}
 .headerStar .headerContent{width:1200px;border: 1px solid #a8a9b0;box-sizing:border-box;}
 .headerContent{width:1200px;margin: 0 auto;}
-.headerContent>ul{padding:15px;padding-bottom:0;}
+.headerContent>ul{padding:15px;padding-bottom:0;border-bottom: 1px dashed #a8a9b0;box-sizing: border-box;}
+.headerContent>ul:last-child{border-bottom:none;}
 .headerContent>ul:first-child>li:nth-child(2)>div>p{float: left;margin-bottom: 10px;margin-left: 20px;}
 .headerContent>ul:first-child>li:nth-child(2)>div>p:hover{color:#ff5722;cursor: pointer;}
-
 .headerContent>ul>li{float: left;}
-.headerContent>ul>li:first-child{width:80px;text-align: left;}
+.headerContent>ul>li:first-child{width:65px;text-align: left;}
 .headerContent>ul>li:nth-child(2){width:1088px;text-align: left;}
 .headerContent>ul>li:nth-child(2)>p{float: left;margin-bottom: 10px;}
 .headerContent>ul>li:nth-child(2)>p:hover{color:#ff5722;cursor: pointer;}
 .headerContent>ul>li>p{margin-left: 20px;}
-
+/*面包屑及其选择样式结束*/
 
 .middleStar{width:1200px;/*min-height: 1500px;*/margin: 0 auto;margin-top:24px;}
 .middleStar_content{float: left;width:903px;/*height:1660px;*/border: 1px solid #a8a9b0;box-sizing: border-box;position:relative;margin-bottom:140px;padding-bottom: 60px;}
