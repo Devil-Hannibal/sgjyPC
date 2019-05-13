@@ -5,8 +5,73 @@
     width: 1200px;
     margin: 0 auto;
 }
+.headerStar{
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerBreadcrumb{
+    display: flex;
+    justify-content: start;
+    line-height: 40px;
+    font-size: 15px;
+    color: #666666;
+}
 
+/* 筛选 */
+.headerContent{
+display: flex;
+justify-content: start;
+border: 1px solid #e8e8e8;
+min-height: 80px;
+padding: 0 15px;
+}
+.headerContent .select_name{
+    line-height: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: #666666;
+    margin-right: 30px;
+}
+/* 筛选分类头 */
+.headerContent .select_box .selectd_title{
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    line-height: 40px;
+}
+.headerContent .select_box .selectd_title li{
+    margin-right: 20px;
+    color: #666666;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* /* 筛选内容 */
+
+.headerContent .select_box .selectd_content .tabs{
+    display: none;
+    
+}
+.headerContent .select_box .selectd_content .tabs.active{
+    display: block;
+}
+.headerContent .select_box .selectd_content .tabs ul{
+    display: flex;
+    justify-content: start;
+    background-color: #f9f9fd;
+    height: 40px;
+    line-height: 40px;
+    padding:  0 20px;
+}
+.headerContent .select_box .selectd_content .tabs ul li{
+    margin-right: 20px;
+    color: #666666;
+    font-size: 15px;
+    cursor: pointer;
+}
 /* 文章样式*/
+.newsDetailsBox{
+    margin-top: 40px;
+}
 .details {
     width: 100%;
     padding: 0 20px 200px;
