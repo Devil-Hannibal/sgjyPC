@@ -119,3 +119,11 @@
   content: "\e603";
 }
 
+.icon-jiantou-right:before {    /*右箭头*/
+  content: "\e618";
+}
+
+.icon-jiantou-left:before {    /*左箭头*/
+  content: "\e659";
+}
+

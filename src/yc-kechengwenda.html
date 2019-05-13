@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../plugin/js/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="../plugin/css/rest.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/yc-kechengwenda.css ">
+    <title>课程问答</title>
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <!-- 登录注册区 -->
+    <div class="title">
+        <div class="fl_title">欢迎来到*-*******网！</div>
+
+        <div class="fr_title font16">
+            <span class="iconfont icon-denglu-copy"></span>
+            <span class="font15" @click="getLogin(true)">登录</span>
+            <span @click="getSurrce(true)">注册</span>
+        </div>
+
+    </div>
+    <!-- 所搜区域 -->
+    <div style="background-color: white">
+        <div class="logoBox">
+            <!-- logo区域 -->
+            <div>
+                <div class="logo_l">
+                    <img src="../images/logo.png" alt>
+                </div>
+            </div>
+            <!-- 搜索框 -->
+            <div class="paddingLeft80">
+                <div class="search">
+                    <input class="search_input" type="text">
+                    <button class="btn-search iconfont iconfont-search"></button>
+                </div>
+
+                <ul class="ul1">
+                    <li>
+                        <a href="javasrcipt:void(0)" class="active">热门搜索 :</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研政治</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研英语</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研数学</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研集训营</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研面试课</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 热线电话 -->
+            <div class="hot_phone">
+                <div class="logo_r">
+                    <div class="tel">
+                        <img src="../images/phone.png" alt>
+                    </div>
+                    <div class="tel_r">
+                        <p>全国服务热线</p>
+                        <p class="phone_txt">15545452365</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 菜单区域 -->
+    <div class="meusBox">
+        <div class="box">
+            <div class="meus">
+                <span class="iconfont icon-caidan1"></span>
+                <span class="paddingLt15">行业分类</span>
+            </div>
+
+            <ul class="meus_ul">
+                <li>
+                    <a href="javascrip:void(0)">关于我们</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">培训课程</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">培训学校</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">讯息资讯</a>
+
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">教考知识</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">明星推荐</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="CourseDetails">
+    <div class="headerDetails">
+        <div class="headerContent">
+            <div class="breadcrumb qf">
+                <p><a href="">源学网首页></a></p>
+                <p><a href="">培训课程></a></p>
+                <p><a href="">实操培训课程></a></p>
+                <p>北京龙潭路仁和会计出口退税课程培训</p>
+            </div>
+
+            <ul class="qf">
+                <li><img src="../images/yc-CourseDetails-1.png" alt=""></li>
+                <li>
+                    <h1>北京龙潭路仁和会计出口退税课程培训</h1>
+                    <p>北京龙潭路仁和会计出口退税课程培训</p>
+                    <div>
+                        <span>价格：电话咨询</span>
+                        <img src="../images/yc-CourseDetails-2.png" alt="">
+                        <span>课程人气：6326</span>
+                    </div>
+                    <h2>授课学校：北京567GO健身学院</h2>
+                    <h3>咨询电话：0451-85**20</h3>
+                    <div class="qf">
+                        <img  src="../images/yc-CourseDetails-3.png" alt="">
+                        <div>在线咨询</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="middleDetails qf">
+        <div class="middleDetails_content">
+            <div class="middleDetailsNav">
+                <a href="#">课程简介</a>
+                <a href="#">课程问答</a>
+            </div>
+
+            <div class="CourseAnswers">
+                <div class="answers">
+                    <ul class="qf">
+                        <li>
+                            <img src="../images/yc-CourseAnswers2.png" alt="">
+                            <p><span>学员</span>[山风水影]</p>
+                        </li>
+                        <li>
+                            <div><span>咨询：</span>帮助孩子强化知识应该采用什么样的方式方法？</div>
+                            <div><span>咨询师[陈炳阳]回复：</span>学员，您好！期间，哈尔滨百川教育为学员提供了针对于各个年级的期强化课程，帮助孩子全面强化知识内容。主要采用：提高兴趣、巩固基础的教学方式。孩子学习水平差，主要是因是能够充分激发孩子的学习兴趣，让学员能够更加轻松的了解有关于学科的重点知识，并进行强化...</div>
+                        </li>
+                        <li>
+                            <a href=""><img src="../images/yc-CourseAnswers1.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="answers">
+                    <ul class="qf">
+                        <li>
+                            <img src="../images/yc-CourseAnswers2.png" alt="">
+                            <p><span>学员</span>[山风水影]</p>
+                        </li>
+                        <li>
+                            <div><span>咨询：</span>帮助孩子强化知识应该采用什么样的方式方法？</div>
+                            <div><span>咨询师[陈炳阳]回复：</span>学员，您好！期间，哈尔滨百川教育为学员提供了针对于各个年级的期强化课程，帮助孩子全面强化知识内容。主要采用：提高兴趣、巩固基础的教学方式。孩子学习水平差，主要是因是能够充分激发孩子的学习兴趣，让学员能够更加轻松的了解有关于学科的重点知识，并进行强化...</div>
+                        </li>
+                        <li>
+                            <a href=""><img src="../images/yc-CourseAnswers1.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="answers">
+                    <ul class="qf">
+                        <li>
+                            <img src="../images/yc-CourseAnswers2.png" alt="">
+                            <p><span>学员</span>[山风水影]</p>
+                        </li>
+                        <li>
+                            <div><span>咨询：</span>帮助孩子强化知识应该采用什么样的方式方法？</div>
+                            <div><span>咨询师[陈炳阳]回复：</span>学员，您好！期间，哈尔滨百川教育为学员提供了针对于各个年级的期强化课程，帮助孩子全面强化知识内容。主要采用：提高兴趣、巩固基础的教学方式。孩子学习水平差，主要是因是能够充分激发孩子的学习兴趣，让学员能够更加轻松的了解有关于学科的重点知识，并进行强化...</div>
+                        </li>
+                        <li>
+                            <a href=""><img src="../images/yc-CourseAnswers1.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="answers">
+                    <ul class="qf">
+                        <li>
+                            <img src="../images/yc-CourseAnswers2.png" alt="">
+                            <p><span>学员</span>[山风水影]</p>
+                        </li>
+                        <li>
+                            <div><span>咨询：</span>帮助孩子强化知识应该采用什么样的方式方法？</div>
+                            <div><span>咨询师[陈炳阳]回复：</span>学员，您好！期间，哈尔滨百川教育为学员提供了针对于各个年级的期强化课程，帮助孩子全面强化知识内容。主要采用：提高兴趣、巩固基础的教学方式。孩子学习水平差，主要是因是能够充分激发孩子的学习兴趣，让学员能够更加轻松的了解有关于学科的重点知识，并进行强化...</div>
+                        </li>
+                        <li>
+                            <a href=""><img src="../images/yc-CourseAnswers1.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <!--分页组件开始-->
+                <div class="paging" style="width:100%;text-align: center;position: absolute;bottom:-100px;">
+                    <ul id="paging" class="pagination">
+                        <!--<li class="first disabled" jp-role="first" jp-data="1"><a href="javascript:void(0);">首页</a></li>
+                        <li class="prev disabled" jp-role="prev" jp-data="0"><a href="javascript:void(0);"><i class="arrow arrow2"></i>上一页</a></li>
+                        <li class="page active" jp-role="page" jp-data="1"><a href="javascript:void(0);">1</a></li>
+                        <li class="page" jp-role="page" jp-data="2"><a href="javascript:void(0);">2</a></li>
+                        <li class="page" jp-role="page" jp-data="3"><a href="javascript:void(0);">3</a></li>
+                        <li class="page" jp-role="page" jp-data="4"><a href="javascript:void(0);">4</a></li>
+                        <li class="page" jp-role="page" jp-data="5"><a href="javascript:void(0);">5</a></li>
+                        <li class="page" jp-role="page" jp-data="6"><a href="javascript:void(0);">6</a></li>
+                        <li class="page" jp-role="page" jp-data="7"><a href="javascript:void(0);">7</a></li>
+                        <li class="page" jp-role="page" jp-data="8"><a href="javascript:void(0);">8</a></li>
+                        <li class="page" jp-role="page" jp-data="9"><a href="javascript:void(0);">9</a></li>
+                        <li class="page" jp-role="page" jp-data="10"><a href="javascript:void(0);">10</a></li>
+                        <li class="next" jp-role="next" jp-data="2"><a href="javascript:void(0);">下一页<i class="arrow arrow3"></i></a></li>
+                        <li class="last" jp-role="last" jp-data="100"><a href="javascript:void(0);">末页</a></li>-->
+                    </ul>
+                    <div style=";position: absolute;right:0px;top:27px;">1/50页</div>
+                    <style>
+                        .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+                            background-color: #fb9400;
+                            border-color: #fb9400;
+                        }
+                        .pagination>li>a, .pagination>li>span {color: #333;}
+                    </style>
+                    <script type="text/javascript">
+                        $("#paging").jqPaginator({
+                            totalPages: 50,
+                            visiblePages: 5,
+                            currentPage: 2,
+                            first: '<li class="first"><a href="javascript:void(0);">首页<\/a><\/li>',
+                            prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i>上一页<\/a><\/li>',
+                            next: '<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"><\/i><\/a><\/li>',
+                            last: '<li class="last"><a href="javascript:void(0);">末页<\/a><\/li>',
+                            page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+                            onPageChange: function (n) {
+                                $("#demo2-text").html("当前第" + n + "页");
+                            }
+                        });
+                    </script>
+                </div>
+                <!--分页组件结束-->
+
+            </div>
+
+        </div>
+        <div class="middleDetails_right">
+            <!--<DiyCourse></DiyCourse>-->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../plugin/js/jquery-2.2.3.min.js"></script>
+    <script src="../plugin/js/jq-paginator.min.js"></script>
+    <link rel="stylesheet" href="../plugin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugin/css/rest.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/yc-mingxingtuijian.css">
+    <title>明星推荐</title>
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <!-- 登录注册区 -->
+    <div class="title">
+        <div class="fl_title">欢迎来到*-*******网！</div>
+
+        <div class="fr_title font16">
+            <span class="iconfont icon-denglu-copy"></span>
+            <span class="font15" @click="getLogin(true)">登录</span>
+            <span @click="getSurrce(true)">注册</span>
+        </div>
+
+    </div>
+    <!-- 所搜区域 -->
+    <div style="background-color: white">
+        <div class="logoBox">
+            <!-- logo区域 -->
+            <div>
+                <div class="logo_l">
+                    <img src="../images/logo.png" alt>
+                </div>
+            </div>
+            <!-- 搜索框 -->
+            <div class="paddingLeft80">
+                <div class="search">
+                    <input class="search_input" type="text">
+                    <button class="btn-search iconfont iconfont-search"></button>
+                </div>
+
+                <ul class="ul1">
+                    <li>
+                        <a href="javasrcipt:void(0)" class="active">热门搜索 :</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研政治</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研英语</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研数学</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研集训营</a>
+                    </li>
+                    <li>
+                        <a href="javasrcipt:void(0)">考研面试课</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 热线电话 -->
+            <div class="hot_phone">
+                <div class="logo_r">
+                    <div class="tel">
+                        <img src="../images/phone.png" alt>
+                    </div>
+                    <div class="tel_r">
+                        <p>全国服务热线</p>
+                        <p class="phone_txt">15545452365</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 菜单区域 -->
+    <div class="meusBox">
+        <div class="box">
+            <div class="meus">
+                <span class="iconfont icon-caidan1"></span>
+                <span class="paddingLt15">行业分类</span>
+            </div>
+
+            <ul class="meus_ul">
+                <li>
+                    <a href="javascrip:void(0)">关于我们</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">培训课程</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">培训学校</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">讯息资讯</a>
+
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">教考知识</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">明星推荐</a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="StarRecommendation">
+    <div class="headerStar">
+        <div class="headerBreadcrumb">
+            <p><a href="">源学网首页></a></p>
+            <p><a href="">明星推荐></a></p>
+            <p>
+                <select>
+                    <option value ="" style="display: none;" disabled selected>资格考试</option>
+                    <option value ="1">不限</option>
+                    <option value ="2">电脑与IT</option>
+                    <option value="3">语言培训</option>
+                </select>
+                >
+            </p>
+            <p>
+                <select>
+                    <option value ="" style="display: none;" disabled selected>会计</option>
+                    <option value ="1">不限</option>
+                    <option value ="2">电脑与IT</option>
+                    <option value="3">语言培训</option>
+                </select>
+                >
+            </p>
+            <p>
+                <select>
+                    <option value ="" style="display: none;" disabled selected>实操</option>
+                    <option value ="1">不限</option>
+                    <option value ="2">电脑与IT</option>
+                    <option value="3">语言培训</option>
+                </select>
+            </p>
+        </div>
+        <div class="Breadcrumb_del qf">
+            <img src="../images/yc-star-delete.png" alt="">
+            <p>清空条件</p>
+        </div>
+        <div class="headerContent">
+            <ul class="qf">
+                <li>行业分类：</li>
+                <li>
+                    <div class="qf">
+                        <p>电脑与IT</p>
+                        <p>企业管理</p>
+                        <p>实操</p>
+                    </div>
+                    <div class="qf">
+                        <p>高级会计职称</p>
+                        <p>会计继续教育</p>
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="qf">
+                <li>上课时间：</li>
+                <li class="qf">
+                    <p>全日制</p>
+                </li>
+            </ul>
+            <ul class="qf">
+                <li>培训周期：</li>
+                <li class="qf">
+                    <p>一周</p>
+                </li>
+            </ul>
+            <ul class="qf">
+                <li>课程级别：</li>
+                <li class="qf">
+                    <p>入门级</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="middleStar qf">
+        <div class="middleStar_content">
+            <div class="middleStar_content_head qf">
+                <div class="content_head_active">综合</div>
+                <div>近期</div>
+                <div>星级推荐</div>
+                <div style="display:flex;">
+                    <p>价格</p>
+                    <div style="display: flex;align-content: center;justify-content: center;margin-left: 10px;flex-direction: column;">
+                        <span class="iconfont icon-iconfontplatformentrance-copy" style="line-height: 12px;margin-top: -3px;color:red;"></span>
+                        <span class="iconfont icon-iconfont-left" style="line-height: 12px"></span>
+                    </div>
+                </div>
+                <div>
+                    <span class="iconfont icon-jiantou-left"></span>
+                    <span>1</span>
+                    /
+                    <span>180</span>
+                    <span class="iconfont icon-jiantou-right"></span>
+                </div>
+            </div>
+            <ul>
+                <li><img src="../images/yc-star.png" alt=""></li>
+                <li><h1>普通话水平测试（幼儿）</h1></li>
+                <li class="qf">
+                    <div><span>课程数量：</span>197</div>
+                    <div><span>星级推荐：</span>★★★★★</div>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/yc-star.png" alt=""></li>
+                <li><h1>普通话水平测试（幼儿）</h1></li>
+                <li class="qf">
+                    <div><span>课程数量：</span>197</div>
+                    <div><span>星级推荐：</span>★★★★★</div>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/yc-star.png" alt=""></li>
+                <li><h1>普通话水平测试（幼儿）</h1></li>
+                <li class="qf">
+                    <div><span>课程数量：</span>197</div>
+                    <div><span>星级推荐：</span>★★★★★</div>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/yc-star.png" alt=""></li>
+                <li><h1>普通话水平测试（幼儿）</h1></li>
+                <li class="qf">
+                    <div><span>课程数量：</span>197</div>
+                    <div><span>星级推荐：</span>★★★★★</div>
+                </li>
+            </ul>
+
+            <!--分页组件开始-->
+            <div class="paging" style="width:100%;text-align: center;position: absolute;bottom:-100px;">
+                <ul id="paging" class="pagination">
+                    <!--<li class="first disabled" jp-role="first" jp-data="1"><a href="javascript:void(0);">首页</a></li>
+                    <li class="prev disabled" jp-role="prev" jp-data="0"><a href="javascript:void(0);"><i class="arrow arrow2"></i>上一页</a></li>
+                    <li class="page active" jp-role="page" jp-data="1"><a href="javascript:void(0);">1</a></li>
+                    <li class="page" jp-role="page" jp-data="2"><a href="javascript:void(0);">2</a></li>
+                    <li class="page" jp-role="page" jp-data="3"><a href="javascript:void(0);">3</a></li>
+                    <li class="page" jp-role="page" jp-data="4"><a href="javascript:void(0);">4</a></li>
+                    <li class="page" jp-role="page" jp-data="5"><a href="javascript:void(0);">5</a></li>
+                    <li class="page" jp-role="page" jp-data="6"><a href="javascript:void(0);">6</a></li>
+                    <li class="page" jp-role="page" jp-data="7"><a href="javascript:void(0);">7</a></li>
+                    <li class="page" jp-role="page" jp-data="8"><a href="javascript:void(0);">8</a></li>
+                    <li class="page" jp-role="page" jp-data="9"><a href="javascript:void(0);">9</a></li>
+                    <li class="page" jp-role="page" jp-data="10"><a href="javascript:void(0);">10</a></li>
+                    <li class="next" jp-role="next" jp-data="2"><a href="javascript:void(0);">下一页<i class="arrow arrow3"></i></a></li>
+                    <li class="last" jp-role="last" jp-data="100"><a href="javascript:void(0);">末页</a></li>-->
+                </ul>
+                <div style=";position: absolute;right:0px;top:27px;">1/50页</div>
+                <style>
+                    .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+                        background-color: #fb9400;
+                        border-color: #fb9400;
+                    }
+                    .pagination>li>a, .pagination>li>span {color: #333;}
+                </style>
+                <script type="text/javascript">
+                        $("#paging").jqPaginator({
+                            totalPages: 50,
+                            visiblePages: 5,
+                            currentPage: 2,
+                            first: '<li class="first"><a href="javascript:void(0);">首页<\/a><\/li>',
+                            prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i>上一页<\/a><\/li>',
+                            next: '<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"><\/i><\/a><\/li>',
+                            last: '<li class="last"><a href="javascript:void(0);">末页<\/a><\/li>',
+                            page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+                            onPageChange: function (n) {
+                                $("#demo2-text").html("当前第" + n + "页");
+                            }
+                        });
+                </script>
+            </div>
+            <!--分页组件结束-->
+
+
+        </div>
+
+        <div class="middleStar_right">    <!--右侧边栏-->
+            <!--<DiyCourse></DiyCourse>-->
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- 尾部 -->
+<div class="footer">
+    <div class="top_f">
+        <div class="w">
+            <div class="yq_link">
+                <h4>友情链接</h4>
+                <ul class="clearfix">
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                    <li>煨汤下载</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 备注 -->
+    <div class="bot_f clearfix">
+        <!-- 客服 -->
+        <div class="ll">
+            <p>龙采学校：0451-895**89 </p>
+            <p>龙采加盟：1864634**895</p>
+            <button><span class="iconfont icon-jiantou">在线客服</span></button><br>
+            <button><span class="iconfont icon-jiantou">在线客服</span></button>
+        </div>
+        <!-- 公司介绍 -->
+        <div class="lc">
+            <ul class="clearfix">
+                <li>首页 </li>
+                <li class="line"></li>
+                <li>关于我们</li>
+                <li class="line"></li>
+                <li>联系我们</li>
+                <li class="line"></li>
+                <li>免责声明</li>
+                <li class="line"></li>
+                <li>法律顾问</li>
+                <li class="line"></li>
+                <li>友情链接</li>
+            </ul>
+            <div class="marginTop40">
+                <p>版权所有：龙采smart科技发展有限公司</p>
+                <p>友情提示：投资有风险，咨询请细致，以便成功加盟。</p>
+                <p>技术支持：龙采科技</p>
+                <p>备案号：895</p>
+            </div>
+        </div>
+        <!-- 二维码区域 -->
+        <div class="lr ">
+            <img src="../images/2wm.png" style="height: 125px;" alt="">
+            <p class="text-center">关注微信公众号</p>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

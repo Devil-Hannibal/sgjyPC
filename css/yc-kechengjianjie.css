@@ -1,0 +1,72 @@
+.qf:after{ content:"";display:block;clear:both}
+*{margin:0;padding:0;}
+body {background: #fff;}
+
+.CourseDetails{width: 100%;margin: 0;padding: 0;}
+.headerDetails{width:100%;height:413px;background: #2f3441;}
+.headerContent{width:1200px;height:100%;margin: 0 auto;}
+.headerContent .breadcrumb{width:1200px;height:88px;display:flex;justify-content:flex-start; align-items : center;}
+.breadcrumb>p{color:#a8a9b0;margin-left:5px;}
+.breadcrumb>p:first-child{margin-left:0;}
+.breadcrumb>p>a{display: block;color:#a8a9b0;}
+.headerContent>ul{width:100%;}
+.headerContent>ul>li{float: left;}
+.headerContent>ul>li:first-child img{width:400px;height:280px;}
+.headerContent>ul>li:last-child{margin-left: 50px;margin-top: 5px;}
+.headerContent>ul>li:last-child h1{color:#fff;font-size: 30px;}
+.headerContent>ul>li:last-child p{color:#a8a9b0;font-size: 15px;margin-top: 19px;}
+.headerContent>ul>li:last-child>div:nth-child(3){margin-top: 28px;}
+.headerContent>ul>li:last-child>div:nth-child(3)>span:first-child{color:#fff;font-size: 16px;}
+.headerContent>ul>li:last-child>div:nth-child(3)>img{width: 18px;height:20px;margin-left: 30px;}
+.headerContent>ul>li:last-child>div:nth-child(3)>span:last-child{color:#fff;font-size: 16px;margin-left: 8px;}
+.headerContent>ul>li:last-child h2{color:#fff;font-size: 16px;margin-top: 14px;}
+.headerContent>ul>li:last-child h3{color:#ff5722;font-size: 30px;margin-top: 14px;}
+.headerContent>ul>li:last-child>div:nth-child(6){width:153px;height:40px;line-height:40px;text-align:left;border-radius: 20px;
+    background: #ff5722;margin-top: 40px;}
+.headerContent>ul>li:last-child>div:nth-child(6):hover{cursor: pointer;}
+.headerContent>ul>li:last-child>div:nth-child(6)>img{float:left;margin-top: 10px;margin-left: 20px;margin-right: 10px;}
+.headerContent>ul>li:last-child>div:nth-child(6)>div{float:left;height:40px;line-height:40px;font-size:18px;color: #fff;}
+
+.middleDetails{width:1200px;min-height: 1500px;margin: 0 auto;margin-top:26px;}
+.middleDetails_content{float: left;width:903px;height:100%;}
+.middleDetails .middleDetailsNav{width: 100%;height:50px;background: #fff5f2;}
+.middleDetails .middleDetailsNav a{font-size: 18px;color:#333;height:50px;line-height: 50px;}
+.middleDetails .middleDetailsNav a:first-child{margin-left: 30px;}
+.middleDetails .middleDetailsNav a:last-child{margin-left: 55px;}
+
+.middleDetails_right{float: left;width:297px;min-height:1500px;}
+
+
+
+
+.CourseDetailsFirst{width:884px;min-height:1500px;margin-top: 42px;margin-left: 19px;
+    border-left: 1px solid #999;margin-bottom: 30px;}
+.part>div:first-child{position: relative;}
+.part>div:first-child img{position: absolute;left:-20px;top:-5px;}
+.part>div:first-child h1{font-size: 24px;margin-left: 44px;color:#ff5722;}
+.part1>div:nth-child(2){width: 839px;height:103px;line-height:33px;
+    box-sizing: border-box;border: 1px dashed #ff5722;padding: 20px;margin-left:44px;margin-top:40px;background: #f7f7f7;overflow: hidden;}
+.part1>p{font-size:15px;color:#666; margin-top: 15px;margin-left: 44px;}
+.part1>p:nth-child(3){margin-top: 28px;}
+.part1>p>span{color:#333;font-weight: bold;}
+.part1>ul{margin-top: 30px;margin-left:44px; }
+.part1>ul li{float: left;}
+.part1>ul li:first-child>button{font-size:18px;color:#fff; width:126px;height:44px;border: none;outline: none;background:#ff5722; }
+.part1>ul li:first-child>button:hover{cursor: pointer;}
+.part1>ul li:nth-child(2)>img{margin-left: 24px;margin-top:10px;}
+.part1>ul li:last-child{margin-top: 10px;}
+.part1>ul li:last-child>p{margin-left: 18px;font-size:24px;color: #ff5722;}
+.part2{margin-top: 65px;}
+.part2>ul{margin-left: 44px;}
+.part2>ul li:first-child img{margin-top: 32px;}
+.part2>ul li>h1{height:17px;line-height:17px;border-left: 4px solid #ff5722;font-size:18px;
+    padding-left: 10px;margin-top:39px;font-weight: bold;}
+.part2>ul li>p{line-height: 28px;margin-top:25px;color:#666;}
+.part2>ul li>p span{color:#333;}
+.part2>ul li:last-child img{margin-top: 30px;}
+
+.part3{margin-top: 65px;}
+.part3>ul{margin-left: 44px;}
+.part3>ul li>h1{height:17px;line-height:17px;border-left: 4px solid #ff5722;font-size:18px;
+    padding-left: 10px;margin-top:39px;font-weight: bold;}
+.part3>ul li>p{line-height: 28px;margin-top:25px;color:#666;}
