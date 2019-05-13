@@ -106,7 +106,7 @@ body {background: #fff;}
     top: 10px;
     font-size: 16px;
     color: #666666;
-    font-weight: none;
+    font-weight: normal;
 }
 
 .fr_content .reserveKc input {
