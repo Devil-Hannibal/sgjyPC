@@ -27,6 +27,8 @@ img{border:none;}
 .fR{float:right;}
 .mL10{margin-left:10px;}
 .mB10{margin-bottom:10px;}
+.fr{float: right;}
+.fl{float: left;}
 
 /*清除浮动*/
 .clear{clear:both;}

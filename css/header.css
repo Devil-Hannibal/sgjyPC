@@ -48,6 +48,8 @@
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #d9d9d9;
+    padding-left: 20px;
+    font-size: 15px;
   }
   .btn-search {
     width: 80px;
@@ -58,6 +60,10 @@
     bottom: 0;
     background-color: #ff5722;
     border: none;
+  }
+  .icon-cx{
+    color: white;
+    font-size: 20px;
   }
   .ul1 li {
     float: left;
