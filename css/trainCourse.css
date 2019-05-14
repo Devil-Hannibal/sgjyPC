@@ -117,7 +117,7 @@ margin-top: 25px;
   .shop_train .title ul li.active {
     color: #ff5722;
   }
-  .shop_train .content ul li {
+  .shop_train .content ul li a{
     display: flex;
     justify-content: space-between;
     padding: 24px 30px 24px 22px;
