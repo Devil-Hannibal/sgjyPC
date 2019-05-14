@@ -42,6 +42,12 @@ justify-content: start;
   font-size: 15px;
   cursor: pointer;
 }
+.headerContent .select_box .selectd_title li.active{
+ color: #ff5722;
+}
+.listSelect{
+  border-bottom: 1px dashed #e4e0e0;
+}
 /* /* 筛选内容 */
 
 .headerContent .select_box .selectd_content .tabs{

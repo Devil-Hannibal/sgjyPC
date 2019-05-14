@@ -5,7 +5,77 @@ body {background: #fff;}
 
 .StarRecommendation{width:1200px;margin: 0 auto;}
 /*面包屑及其选择样式*/
-.headerStar{width:1200px;position: relative;}
+.headerBreadcrumb{
+    display: flex;
+    justify-content: start;
+    line-height: 40px;
+    font-size: 15px;
+    color: #666666;
+  }
+  .headerBreadcrumb select{
+      width: 80px;
+  }
+  /* 筛选 */
+  .headerContent{
+  
+  border: 1px solid #e8e8e8;
+  min-height: 80px;
+  padding: 0 15px;
+  }
+  .listSelect{
+  display: flex;
+  justify-content: start;
+  }
+  .headerContent .select_name{
+    line-height: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: #666666;
+    margin-right: 30px;
+  }
+  /* 筛选分类头 */
+  .headerContent .select_box .selectd_title{
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    line-height: 40px;
+  }
+  .headerContent .select_box .selectd_title li{
+    margin-right: 20px;
+    color: #666666;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .headerContent .select_box .selectd_title li.active{
+   color: #ff5722;
+  }
+  .listSelect{
+    border-bottom: 1px dashed #e4e0e0;
+  }
+  /* /* 筛选内容 */
+  
+  .headerContent .select_box .selectd_content .tabs{
+    display: none;
+    
+  }
+  .headerContent .select_box .selectd_content .tabs.active{
+    display: block;
+  }
+  .headerContent .select_box .selectd_content .tabs ul{
+    display: flex;
+    justify-content: start;
+    background-color: #f9f9fd;
+    height: 40px;
+    line-height: 40px;
+    padding:  0 20px;
+  }
+  .headerContent .select_box .selectd_content .tabs ul li{
+    margin-right: 20px;
+    color: #666666;
+    font-size: 15px;
+    cursor: pointer;
+  }
+/* .headerStar{width:1200px;position: relative;}
 .headerBreadcrumb{height:50px;display:flex;justify-content:flex-start; align-items : center;}
 .headerBreadcrumb>p{margin-left:5px;}
 .headerBreadcrumb>p:first-child{margin-left: 0;}
@@ -28,7 +98,7 @@ body {background: #fff;}
 .headerContent>ul>li:nth-child(2){width:1088px;text-align: left;}
 .headerContent>ul>li:nth-child(2)>p{float: left;margin-bottom: 10px;}
 .headerContent>ul>li:nth-child(2)>p:hover{color:#ff5722;cursor: pointer;}
-.headerContent>ul>li>p{margin-left: 20px;}
+.headerContent>ul>li>p{margin-left: 20px;} */
 /*面包屑及其选择样式结束*/
 
 .middleStar{width:1200px;/*min-height: 1500px;*/margin: 0 auto;margin-top:24px;}
